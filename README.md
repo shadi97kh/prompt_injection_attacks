@@ -49,7 +49,7 @@ If you use this code or data in your research, please cite our paper:
 
 ## License
 
-This project is licensed under the MIT License. See the LICENSE file for details.
+This project is licensed under the CC BY-NC-SA 4.0 License. For further info, see License page.
 
 ## Contact
 
