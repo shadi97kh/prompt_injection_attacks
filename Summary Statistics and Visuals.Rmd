@@ -20,6 +20,21 @@ options(scipen = 999)
 library(svglite)
 ```
 
+```{r}
+installed_packages <- installed.packages()
+package_list <- c("ggplot2", "readxl", "dplyr", "tidyr", "gridExtra", "FSA", "rstatix", "scales", "RColorBrewer", "openxlsx", "svglite")
+
+for (package in package_list) {
+  version <- installed_packages[package, "Version"]
+  if (!is.na(version)) {
+    cat(sprintf("%s==%s\n", package, version))
+  } else {
+    cat(sprintf("%s not found\n", package))
+  }
+}
+```
+
+
 # Loading data
 ```{r}
 data <- read_excel("C:/Users/janni/OneDrive/Dokumente/PostDoc/Prompt_Injection_Attacks/Supplementary_Material_1.xlsx", sheet = "ST1 Raw Data")
@@ -698,8 +713,7 @@ summary_stats_2a <- data_long %>%
 
 # Summary statistics for Figure 2 (b)
 ```{r}
-library(dplyr)
-library(rstatix)
+
 
 
 

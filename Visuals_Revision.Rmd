@@ -13,13 +13,14 @@ library(tidyr)
 library(gridExtra)
 library(FSA)
 library(rstatix)
+library(openxlsx)
 options(scipen = 999)
 ```
 
 
 # Export Statistics
 ```{r}
-library(openxlsx)
+
 suppl_path <- "C:/Users/janni/OneDrive/Dokumente/PostDoc/Prompt_Injection_Attacks/Supplementary_Material_1.xlsx"
 
 export_stats_to_excel <- function(excel_file, sheet_name, summary_stats, p_values, overwrite_sheet = TRUE) {
