@@ -62,7 +62,7 @@ For questions or issues regarding the code, please open an issue in this reposit
 ## Setup
 
 1. Clone this repository.
-2. Install required Python libraries: `pip install anthropic openai openpyxl python-dotenv reka pandas`
+2. Install required Python libraries: `pip install anthropic openai openpyxl python-dotenv pandas` and `pip install "reka-api>=2.0.0"`
 3. Create three `.env` files in the project root:
    - `api_claude.env`: Contains `API_KEY_CLAUDE=your_anthropic_api_key`
    - `api_gpt4.env`: Contains `OPENAI_API_KEY=your_openai_api_key`
